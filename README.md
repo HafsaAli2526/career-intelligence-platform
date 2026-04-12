@@ -1,7 +1,7 @@
 ## career-intelligence-platform
-AI-powered career intelligence platform that parses CVs and job descriptions, computes ATS-based match scores, identifies skill gaps, and generates personalized learning recommendations using RAG and NLP techniques
-
-#🏷️ Badges
+AI-powered career intelligence platform that parses CVs and job descriptions, computes ATS-based match scores, identifies skill gaps, and generates personalized learning recommendations using RAG and NLP techniques.
+##
+# 🏷️ Badges
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?logo=fastapi)
 ![React](https://img.shields.io/badge/React-Frontend-blue?logo=react)
@@ -11,37 +11,37 @@ AI-powered career intelligence platform that parses CVs and job descriptions, co
 ![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-#🧰 Tech Stack
--💻 Backend
+# 🧰 Tech Stack
+- 💻 Backend
 FastAPI
 Python
 SQLAlchemy
 Pydantic
--🎨 Frontend
+- 🎨 Frontend
 React.js / Next.js
 Tailwind CSS
 Chart.js / Recharts
--🧠 AI / NLP
+- 🧠 AI / NLP
 SpaCy
 HuggingFace Transformers
 Sentence-Transformers (MiniLM/BERT)
 Scikit-learn
--🔍 RAG & Vector Search
+- 🔍 RAG & Vector Search
 LangChain
 ChromaDB / FAISS
 LLMs (LLaMA / GPT / Claude APIs)
--🗄️ Database
+- 🗄️ Database
 PostgreSQL (Structured Data)
 Vector Database (Embeddings Storage)
--🌐 Web Scraping
+- 🌐 Web Scraping
 BeautifulSoup
 Selenium
 Requests
--⚙️ DevOps / Tools
+- ⚙️ DevOps / Tools
 Git & GitHub
 GitHub Actions
 Docker (Optional)
--📌 Key Features
+- 📌 Key Features
 CV Parsing (PDF/DOCX → Structured Data)
 Job Description Parsing (with Salary Extraction)
 ATS Score Calculation
