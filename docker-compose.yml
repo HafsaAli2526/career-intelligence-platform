@@ -1,0 +1,59 @@
+
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  db:
+    image: postgres:13
+    container_name: career_platform_db
+    environment:
+      POSTGRES_DB: career_platform
+      POSTGRES_USER: career_user
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - career_network
+
+  # Backend API
+  backend:
+    build: ./backend
+    container_name: career_platform_backend
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://career_user:${DB_PASSWORD}@db:5432/career_platform
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./vector_store:/app/vector_store
+      - ./uploads:/app/uploads
+    networks:
+      - career_network
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # Frontend (Optional)
+  frontend:
+    build: ./frontend
+    container_name: career_platform_frontend
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
+    environment:
+      NEXT_PUBLIC_API_URL: http://backend:8000
+    networks:
+      - career_network
+
+volumes:
+  postgres_data:
+
+networks:
+  career_network:
+    driver: bridge
+

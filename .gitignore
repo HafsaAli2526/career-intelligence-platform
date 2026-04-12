@@ -1,0 +1,70 @@
+"""
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Database
+*.db
+*.sqlite3
+
+# Uploads
+uploads/cvs/*
+uploads/jds/*
+!uploads/cvs/.gitkeep
+!uploads/jds/.gitkeep
+
+# Vector Store
+vector_store/chroma_db/*
+vector_store/faiss/*
+!vector_store/chroma_db/.gitkeep
+!vector_store/faiss/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend
+node_modules/
+.next/
+build/
+dist/
+*.local
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Docker
+docker-compose.override.yml
+"""
