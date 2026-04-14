@@ -1,4 +1,4 @@
-## career-intelligence-platform
+## CAREER-INTELLEGENCE-PLATFORM
 AI-powered career intelligence platform that parses CVs and job descriptions, computes ATS-based match scores, identifies skill gaps, and generates personalized learning recommendations using RAG and NLP techniques.
 ##
 # 🏷️ Badges
@@ -147,16 +147,16 @@ ats_score =
 
 ## 🎓 FYP Requirements Coverage
 
-| Requirement | Status |
-|-------------|--------|
-| CV → Data Module | ✅ |
-| JD → Data Module | ✅ |
-| CV-JD Matching | ✅ |
-| ATS Scoring | ✅ |
+| Requirement     | Status |
+|-----------------|--------|
+| CV → Data Module   | ✅ |
+| JD → Data Module   | ✅ |
+| CV-JD Matching     | ✅ |
+| ATS Scoring        | ✅ |
 | Skill Gap Analyzer | ✅ |
-| Job Scraper | ✅ |
-| RAG Recommendations | ✅ |
-| Web Dashboard | ✅ |
+| Job Scraper        | ✅ |
+| RAG Recommendations| ✅ |
+| Web Dashboard      | ✅ |
 
 ---
 
